@@ -1,5 +1,7 @@
 # IPCP - Interative Parallel Coordinates Plot
 
+## Introduction
+
 The Interactive Parallel Coordinates plugin provides an integrated way of visualizing the graphic in WEKA with a possibility of interaction with the information, in general it's possible to:
 
 1. Hide / Display axes;
@@ -19,3 +21,16 @@ Recommended readings
 2. [Parallel Coordinates](https://en.wikipedia.org/wiki/Parallel_coordinates);
 
 3. [ARFF format](http://www.cs.waikato.ac.nz/ml/weka/arff.html).
+
+## Installation
+
+The installation must be done by the [WEKA package manager](https://weka.wikispaces.com/How+do+I+use+the+package+manager%3F), but if the package is not available it's possible to install directly using [IPCP zip file](https://google.com)
+
+## Git Repository
+Both source code and package file can be obtained from:
+
+  https://github.com/cgearhart/students-filters.git
+
+##License
+
+The IPCP plugin is licensed under [GPLv3](https://github.com/glaubercini/ipcp/raw/master/LICENSE).
