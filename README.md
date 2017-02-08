@@ -24,7 +24,7 @@ Recommended readings
 
 ## Installation
 
-The installation must be done by the [WEKA package manager](https://weka.wikispaces.com/How+do+I+use+the+package+manager%3F), but if the package is not available it's possible to install directly using [IPCP zip file](https://google.com)
+The installation must be done by the [WEKA package manager](https://weka.wikispaces.com/How+do+I+use+the+package+manager%3F), but if the package is not available it's possible to install directly using [IPCP zip file](https://github.com/glaubercini/ipcp/raw/master/packages/IPCP_1_0_0.zip)
 
 ## Git Repository
 Both source code and package file can be obtained from:
