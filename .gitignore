@@ -20,6 +20,7 @@ nbdist/
 .nb-gradle/
 test/
 build.xml
+manifest.mf
 
 # Others
 lib/
