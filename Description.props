@@ -1,0 +1,29 @@
+# Description file for Interactive Parallel Coordinates Plot Weka package
+#
+
+PackageName=IPCP
+
+Version=1.1.1
+
+Date=2016-01-26
+
+Title=Interative Parallel Coordinates Plot
+
+Category=Visualization
+
+Author=Glauber Cini <glaubercini@gmail.com>
+
+Maintainer=Glauber Cini <glaubercini@gmail.com>
+
+License=GPL 3.0
+
+Description=Parallel coordinates is a common way of visualizing high-dimensional geometry and analyzing multivariate data. \
+	To show a set of points in an n-dimensional space, a backdrop is drawn consisting of n parallel lines, typically vertical and equally spaced. \ 
+	A point in n-dimensional space is represented as a polyline with vertices on the parallel axes; the position of the vertex on the i-th axis \
+	corresponds to the i-th coordinate of the point. [http://en.wikipedia.org/wiki/Parallel_coordinates]
+	
+PackageURL=http://www.unisinos.br/weka/PCP.zip
+
+URL=http://www.unisinos.br/weka/pcp.htm
+
+Depends=weka (>=3.7.12)

@@ -1,2 +1,2 @@
-# ipcp
-Interative Parallel Coordinates Plot
+# IPCP - Interative Parallel Coordinates Plot
+

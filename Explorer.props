@@ -1,0 +1,4 @@
+# Explorer.props file. Adds the ExplorerIPCPPanel to the Tabs key.
+
+Tabs=weka.gui.explorer.ExplorerIPCPPanel
+TabsPolicy=append
