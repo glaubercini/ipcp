@@ -13,6 +13,9 @@ The Interactive Parallel Coordinates plugin provides an integrated way of visual
 5. Export dataset in ARFF format (filtered, unfiltered and selected).
 
 Recommended readings
+
 1. [WEKA](http://www.cs.waikato.ac.nz/ml/weka/);
+
 2. [Parallel Coordinates](https://en.wikipedia.org/wiki/Parallel_coordinates);
+
 3. [ARFF format](http://www.cs.waikato.ac.nz/ml/weka/arff.html).
