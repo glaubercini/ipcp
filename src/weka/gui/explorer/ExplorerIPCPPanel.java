@@ -84,12 +84,16 @@ public class ExplorerIPCPPanel extends JPanel implements ExplorerPanel, Componen
 
     @Override
     public void componentResized(ComponentEvent e) {
-        this.ipcpPanel.setFrameSize(this.getSize());
+        if(this.ipcpPanel instanceof IPCPVisualizationPanel) {
+            this.ipcpPanel.setFrameSize(this.getSize());
+        }
     }
 
     @Override
     public void componentMoved(ComponentEvent e) {
-        this.ipcpPanel.setLocation(this.getLocation());
+        if(this.ipcpPanel instanceof IPCPVisualizationPanel) {
+            this.ipcpPanel.setLocation(this.getLocation());
+        }
     }
 
     @Override
