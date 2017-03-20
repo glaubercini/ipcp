@@ -29,7 +29,7 @@ The installation must be done by the [WEKA package manager](https://weka.wikispa
 ## Git Repository
 Both source code and package file can be obtained from:
 
-  https://github.com/glaubercini/ipcp.git
+https://github.com/glaubercini/ipcp.git
 
 ##License
 
