@@ -28,15 +28,13 @@ public class InteractiveParallelCoordinatesPanel extends ChartPanel implements M
     
     private final InteractiveParallelCoordinatesChart chart;
     
-    private HashSet<Sample> samplesHoverList;
+    private final HashSet<Sample> samplesHoverList;
     
-    private Map<int[], HashSet<Sample>> samplesLineMap;
+    private final Map<int[], HashSet<Sample>> samplesLineMap;
     
     private int dragStartX;
     
     private int dragStartY;
-    
-    private int dragCurrentX;
     
     private int dragOffsetY;
     
@@ -152,7 +150,7 @@ public class InteractiveParallelCoordinatesPanel extends ChartPanel implements M
                     double value = currentSample.getValue(this.chart.getDataSheet().getAttribute(i));
                     int yPositionRelToBottom;
                     if (axisRanges[i] == 0) {
-                        yPositionRelToBottom = 0;//(int) (axisHeights[i] * 0.5);
+                        yPositionRelToBottom = 0;
                     } else {
                         double ratio = (value - axisMinValues[i]) / axisRanges[i];
                         yPositionRelToBottom = (int) (axisHeights[i] * ratio);
@@ -163,8 +161,6 @@ public class InteractiveParallelCoordinatesPanel extends ChartPanel implements M
                     
                     if (firstAxisDrawn) {
                         xPositionCurrent = xPositionCurrent + (int) (axisWidths[i] * 0.5);
-                        //g.drawLine(xPositionLast - 3, yPositionLast, xPositionLast + 3, yPositionLast);
-                        //g.drawLine(xPositionCurrent - 3, yPositionCurrent, xPositionCurrent + 3, yPositionCurrent);
                         for (int t = 1; t <= lineThickness; t++) {
                             int deltaY = -((int) (t / 2)) * (2 * (t % 2) - 1);
                             g.drawLine(xPositionLast, yPositionLast + deltaY, xPositionCurrent, yPositionCurrent + deltaY);
@@ -178,7 +174,6 @@ public class InteractiveParallelCoordinatesPanel extends ChartPanel implements M
                         
                     } else {
                         firstAxisDrawn = true;
-                        // aqui podemos completar o código pra adicionar a label das samples
                     }
                     xPositionLast = xPositionCurrent;
                     xPositionCurrent = xPositionCurrent + (int) (axisWidths[i] * 0.5);
@@ -307,7 +302,6 @@ public class InteractiveParallelCoordinatesPanel extends ChartPanel implements M
             this.draggedFilter.setYPos(Math.max(Math.min(e.getY() + this.dragOffsetY, this.draggedFilter.getLowestPos()), this.draggedFilter.getHighestPos()));
             this.repaint();
         } else if (this.dragSelecting) {
-            this.dragCurrentX = e.getX();
             this.dragOffsetY = e.getY();
             this.repaint();
         }

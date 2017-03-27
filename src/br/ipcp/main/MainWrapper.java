@@ -15,8 +15,7 @@ public class MainWrapper {
     private void startArffChart() {
         try {
             DatasetBuilder builder = new DatasetBuilder();
-            //String pathname = "C:\\Program Files\\Weka-3-7\\data\\iris.2D.arff";
-            String pathname = "C:\\Users\\Glauber\\OneDrive\\Mestrado\\Dissertação\\Produção Artigo\\datasets\\mushroom.arff";
+            String pathname = "C:\\Program Files\\Weka-3-7\\data\\iris.2D.arff";
             this.dataIntegration = builder.createDatasetFromFile(new File(pathname));
                     
             ChartFrame chartFrame = new ChartFrame(this);

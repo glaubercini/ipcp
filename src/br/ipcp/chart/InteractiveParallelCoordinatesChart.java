@@ -27,35 +27,33 @@ public class InteractiveParallelCoordinatesChart implements Serializable {
     
     private Color backgroundColor = new Color(255, 255, 255);
     
-    private int topMargin = 10;    
+    private final int topMargin = 10;    
     
-    private int axisLabelFontSize = 16;
+    private final int axisLabelFontSize = 16;
     
     private int axisLabelVerticalDistance = 10;
     
     private boolean verticallyOffsetAxisLabels = true;
     
-    private Color axisLabelFontColor = new Color(15, 49, 178);
+    private final Color axisLabelFontColor = new Color(15, 49, 178);
     
-    private Color axisColor = new Color(15, 49, 178);
+    private final Color axisColor = new Color(15, 49, 178);
     
-    private ArrayList<Axis> axes = new ArrayList<>();
+    private final ArrayList<Axis> axes = new ArrayList<>();
     
-    private int lineThickness = 1;
+    private final int lineThickness = 1;
     
-    private Color sampleLineColor = new Color(188, 0, 2);
+    private final Color sampleLineColor = new Color(188, 0, 2);
     
-    private Color sampleLineColorFiltered = new Color(32, 255, 0);
+    private final Color sampleLineColorFiltered = new Color(32, 255, 0);
     
-    private Color sampleLineColorSelected = new Color(0, 0, 0);
+    private final Color sampleLineColorSelected = new Color(0, 0, 0);
     
-    private int selectedSampleLineThickness = 1;
+    private final Color filterColor  = new Color(15, 49, 178);
     
-    private Color filterColor  = new Color(15, 49, 178);
+    private final int filterHeight = 20;
     
-    private int filterHeight = 20;
-    
-    private int filterWidth = 7;
+    private final int filterWidth = 7;
 
     public InteractiveParallelCoordinatesChart(DataSheet dataSheet, int id) {
         this.dataSheet = dataSheet;
